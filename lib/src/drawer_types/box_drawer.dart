@@ -94,7 +94,7 @@ class _BoxDrawerState extends State<BoxDrawer> {
                                   Expanded(
                                       child: Text(
                                     page.title,
-                                    style: widget.menuTextStyle?.copyWith(
+                                    style: widget.menuTextStyle.copyWith(
                                       fontWeight: selectedPageIndex == i ? FontWeight.bold : null,
                                       color: selectedPageIndex == i
                                           ? widget.selectedColor

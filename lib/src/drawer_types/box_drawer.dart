@@ -62,7 +62,8 @@ class _BoxDrawerState extends State<BoxDrawer> {
                             width: widget.drawerItemsWidth,
                             child: InkWell(
                               borderRadius: widget.boxDrawerItemRadius,
-                              onTap: () {
+                              onTap: () async {
+                                await widget.menuItems[i].onMenuTapped;
                                 setState(() {
                                   selectedPageIndex = i;
                                 });

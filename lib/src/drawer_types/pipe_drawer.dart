@@ -59,7 +59,8 @@ class _PipeDrawerState extends State<PipeDrawer> {
                         topRight: Radius.circular(30),
                         bottomRight: Radius.circular(30),
                       ),
-                      onTap: () {
+                      onTap: () async{
+                        await widget.menuItems[i].onMenuTapped;
                         setState(() {
                           selectedPageIndex = i;
                         });

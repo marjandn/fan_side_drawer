@@ -60,6 +60,7 @@ class _PipeDrawerState extends State<PipeDrawer> {
                         bottomRight: Radius.circular(30),
                       ),
                       onTap: () {
+                        page.onMenuTapped.call();
                         setState(() {
                           selectedPageIndex = i;
                         });

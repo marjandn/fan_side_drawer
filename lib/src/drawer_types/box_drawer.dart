@@ -63,6 +63,7 @@ class _BoxDrawerState extends State<BoxDrawer> {
                             child: InkWell(
                               borderRadius: widget.boxDrawerItemRadius,
                               onTap: () {
+                                page.onMenuTapped.call();
                                 setState(() {
                                   selectedPageIndex = i;
                                 });
